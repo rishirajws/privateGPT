@@ -19,8 +19,8 @@ RUN poetry install --with ui
 FROM base as app
 
 ENV PYTHONUNBUFFERED=1
-ENV PORT=8080
-EXPOSE 8080
+ENV PORT=8147
+EXPOSE 8147
 
 # Prepare a non-root user
 RUN adduser --system worker
